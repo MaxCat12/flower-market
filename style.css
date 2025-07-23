@@ -153,3 +153,80 @@ img {
     font-size: 1.6rem;
   }
 }
+
+/* Plants Section */
+.plants {
+  padding: 2vw 6vw;
+  text-align: center;
+}
+
+.plants-color {
+  color: #e85424;
+}
+
+.plants .section-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.plants .section-subtitle {
+  color: #757575;
+  margin-bottom: 2.5rem;
+}
+
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.plant-card {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #ececec;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.plant-card:hover {
+  box-shadow: 0 4px 24px #e0e0e0;
+}
+
+.plant-card h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0.25rem 0;
+}
+
+.plant-card .price {
+  font-weight: bold;
+  color: #e85424;
+  margin-bottom: 0.75rem;
+}
+
+.add-cart-btn {
+  background: #fc6602;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.add-cart-btn:hover {
+  background: #c94d00;
+}
+
+/* Mobile grid for Our Plants */
+@media (max-width: 900px) {
+  .plants-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
