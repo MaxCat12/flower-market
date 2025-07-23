@@ -1,0 +1,75 @@
+/* General Resets & Styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f9f9fb;
+  color: #222;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6vw;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fc6602;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2vw;
+  margin: 0;
+  align-items: center;
+}
+
+.cart-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.cart-text {
+  margin-left: 5px;
+}
+
+.nav-cart-mobile {
+  display: none;
+}
