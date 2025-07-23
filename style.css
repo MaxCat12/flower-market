@@ -73,3 +73,83 @@ img {
 .nav-cart-mobile {
   display: none;
 }
+
+@media screen and (max-width: 767px) {
+  .nav-menu {
+    display: none;
+  }
+  .nav-cart-mobile {
+    display: block;
+  }
+  .navbar {
+    padding: 1rem 3vw;
+  }
+  .site-name {
+    font-size: 1rem;
+  }
+  .mobile-cart-text {
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+  .nav-cart-mobile a {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+  }
+}
+
+/* Banner Section */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 6vw;
+  gap: 40px;
+}
+
+.banner-content {
+  max-width: 450px;
+}
+
+.banner-content h1 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  /* color: #fc6602; */
+}
+
+.banner-content .highlight {
+  color: #e85424;
+}
+
+.banner-content p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.banner-image img {
+  width: 320px;
+  border-radius: 12px;
+}
+
+/* Mobile Banner */
+@media (max-width: 900px) {
+  .banner {
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .banner-image img {
+    width: 90vw;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner-content h1 {
+    font-size: 1.6rem;
+  }
+}
