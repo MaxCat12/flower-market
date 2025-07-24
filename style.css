@@ -230,6 +230,180 @@ img {
   }
 }
 
+/* plant lovers section */
+.plant-lover {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding: 3vw 6vw;
+  background: #f8fafc;
+}
+
+.plant-lover-image-wrapper {
+  position: relative;
+  min-width: 250px;
+  max-width: 320px;
+}
+
+.plant-lover-image {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  display: block;
+}
+
+.trusted-badge {
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  width: 90px; /* Adjust according to your badge image size */
+  height: 90px;
+  z-index: 10;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.plant-lover-content {
+  flex: 1;
+  padding-top: 0.8rem;
+}
+
+.plant-lover-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+  color: #222;
+}
+
+.plant-lover-content ul {
+  color: #555;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  padding-left: 1.5em;
+}
+
+@media (max-width: 900px) {
+  .plant-lover {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.2rem;
+  }
+  .plant-lover-image-wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .plant-lover-content {
+    padding-top: 0.8rem;
+    text-align: left;
+  }
+}
+
+/* Hide trusted badge on mobile */
+@media (max-width: 767px) {
+  .trusted-badge {
+    display: none;
+  }
+}
+
+/* latest deals section */
+.latest-deals {
+  background: #f8fafc;
+  padding: 3vw 6vw 4vw 6vw;
+  text-align: center;
+}
+
+.latest-deals h2 {
+  font-size: 2rem;
+  margin: 1.5rem 0 0.6rem 0;
+  font-weight: 700;
+  color: #222;
+}
+
+.highlighted-orange {
+  color: #fc6602;
+  font-weight: 800;
+}
+
+.latest-deals-subtitle {
+  color: #444;
+  font-size: 1.1rem;
+  max-width: 520px;
+  margin: 0 auto 2.2rem auto;
+}
+
+.latest-deal-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.deal-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.deal-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.deal-content {
+  padding: 1.2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.deal-content h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 0.2em 0.6em;
+  border-radius: 7px;
+  margin-bottom: 0.9em;
+}
+
+.deal-btn {
+  background: #fc6602;
+  color: #fff;
+  padding: 0.6em 2.2em;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.deal-btn:hover {
+  background: #c94d00;
+}
+
+/* Responsive - Stack cards vertically and show only 1 */
+@media (max-width: 900px) {
+  .latest-deal-cards {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+  }
+  .deal-card {
+    width: 100%;
+    max-width: 350px;
+  }
+  /* Show only the first card on mobile*/
+  .deal-card:not(:first-child) {
+    display: none;
+  }
+}
+
 /* Join Section */
 .join-section {
   background: url("assets/news-letter-bg.png") center/cover no-repeat;
