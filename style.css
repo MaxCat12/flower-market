@@ -443,7 +443,7 @@ img {
   }
 
   .left-deals {
-    flex-direction: column; /* Stack left cards vertically */
+    flex-direction: column;
     gap: 1.5rem;
     margin-bottom: 0;
   }
@@ -473,6 +473,7 @@ img {
     font-size: 0.9rem;
   }
 }
+
 /* Join Section */
 .join-section {
   background: url("assets/news-letter-bg.png") center/cover no-repeat;
@@ -526,35 +527,6 @@ img {
 }
 
 @media (max-width: 767px) {
-  /* .join-section {
-    padding: 7vw 5vw;
-    text-align: center;
-  }
-
-  .join-content {
-    max-width: 100%;
-    padding: 0;
-  }
-
-  .join-content h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1em;
-  }
-
-  .subscribe-form {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .subscribe-form input[type="email"] {
-    border-right: 1px solid #e85424;
-  }
-
-  .subscribe-form button {
-    border-radius: 999px;
-    border-left: 1px solid #e85424;
-    margin-top: 0.7em;
-  } */
   .join-section {
     padding: 7vw 5vw;
     text-align: center;
@@ -607,7 +579,6 @@ img {
   background: #fff;
 }
 
-/* Logo and text */
 .logo-para {
   display: grid;
   max-width: 250px;
@@ -618,7 +589,6 @@ img {
   width: 52px;
 }
 
-/* Links Layout */
 .footer-links-wrapper {
   display: flex;
   gap: 4em;
@@ -636,7 +606,6 @@ img {
   font-size: 1.1rem;
 }
 
-/* Social Icons */
 .footer-social {
   display: flex;
   gap: 1.2em;
@@ -652,43 +621,49 @@ img {
 
 @media (max-width: 768px) {
   .footer {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1em;
+    padding: 6vw 5vw;
     text-align: left;
-    padding: 6vw 6vw;
+    gap: 0.8em;
   }
 
   .logo-para {
-    align-items: flex-start;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
 
   .footer-links-wrapper {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.5em;
   }
 
-  .footer-links-wrapper .footer-links {
-    display: contents;
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
   }
 
   .footer-links a {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 400;
     color: #000;
     text-decoration: none;
     margin: 0;
+    line-height: 1.4;
   }
 
   .footer-social {
+    display: flex;
     justify-content: flex-start;
-    margin-top: 1.2em;
-    gap: 0.8em;
+    margin-top: 1em;
+    gap: 0.6em;
   }
 
   .footer-social a img {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
 }
