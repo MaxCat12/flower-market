@@ -254,14 +254,13 @@ img {
 
 .trusted-badge {
   position: absolute;
-  top: -18px;
-  left: -18px;
-  width: 90px; /* Adjust according to your badge image size */
-  height: 90px;
+  top: -50px;
+  right: -40px;
+  width: 150px;
+  height: 150px;
   z-index: 10;
   border-radius: 50%;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  background: #fff;
 }
 
 .plant-lover-content {
